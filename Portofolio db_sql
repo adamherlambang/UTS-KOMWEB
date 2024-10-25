@@ -1,0 +1,56 @@
+CREATE TABLE personal_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100),
+    universitas VARCHAR(100),
+    jurusan VARCHAR(100),
+    deskripsi TEXT
+);
+INSERT INTO personal_info (nama, universitas, jurusan, deskripsi) 
+VALUES ('Adam Herlambang', 'Universitas Pembangunan Jaya', 'Informatika', 'Saya adalah mahasiswa yang tertarik dengan bidang IT dan desain kemasan.');
+
+
+CREATE TABLE about (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100),
+    universitas VARCHAR(100),
+    jurusan VARCHAR(100),
+    deskripsi TEXT
+);
+INSERT INTO about (nama, universitas, jurusan, deskripsi) 
+VALUES ('Adam Herlambang', 'Universitas Pembangunan Jaya', 'Informatika', 'Saya adalah mahasiswa yang tertarik dalam bidang IT dan desain kemasan, serta aktif dalam berbagai kegiatan kampus.');
+
+
+CREATE TABLE skill (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    judul VARCHAR(100),
+    deskripsi TEXT
+);
+INSERT INTO skill (judul, deskripsi) VALUES
+('Pemrograman Web', 'Menguasai HTML, CSS, dan JavaScript untuk membuat situs web interaktif.'),
+('Basis Data', 'Pengalaman dalam menggunakan MySQL dan MongoDB untuk mengelola data.'),
+('Desain Grafis', 'Kemampuan dalam menggunakan software desain seperti Adobe Photoshop dan Illustrator.');
+
+
+CREATE TABLE project (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100),
+    deskripsi TEXT,
+    gambar VARCHAR(255),
+    link VARCHAR(255)
+);
+INSERT INTO project (title, deskripsi, gambar, link) VALUES
+('Proyek A', 'Deskripsi proyek A yang menarik dan informatif.', 'path/to/imageA.jpg', 'http://link-to-projectA.com'),
+('Proyek B', 'Deskripsi proyek B yang sangat berguna dan inovatif.', 'path/to/imageB.jpg', 'http://link-to-projectB.com'),
+('Proyek C', 'Deskripsi proyek C yang menunjukkan keterampilan saya.', 'path/to/imageC.jpg', 'http://link-to-projectC.com');
+
+
+CREATE TABLE contact (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    message TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO contact (name, email, message) VALUES
+('John Doe', 'john.doe@example.com', 'Hello! I would like to know more about your projects.'),
+('Jane Smith', 'jane.smith@example.com', 'I have a question regarding your portfolio.');
