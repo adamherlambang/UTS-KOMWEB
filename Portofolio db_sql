@@ -6,7 +6,7 @@ CREATE TABLE personal_info (
     deskripsi TEXT
 );
 INSERT INTO personal_info (nama, universitas, jurusan, deskripsi) 
-VALUES ('Adam Herlambang', 'Universitas Pembangunan Jaya', 'Informatika', 'Saya adalah mahasiswa yang tertarik dengan bidang IT dan desain kemasan.');
+VALUES ('Adam Herlambang', 'Universitas Pembangunan Jaya', 'Informatika', 'Saya adalah mahasiswa aktif.');
 
 
 CREATE TABLE about (
@@ -17,7 +17,7 @@ CREATE TABLE about (
     deskripsi TEXT
 );
 INSERT INTO about (nama, universitas, jurusan, deskripsi) 
-VALUES ('Adam Herlambang', 'Universitas Pembangunan Jaya', 'Informatika', 'Saya adalah mahasiswa yang tertarik dalam bidang IT dan desain kemasan, serta aktif dalam berbagai kegiatan kampus.');
+VALUES ('Adam Herlambang', 'Universitas Pembangunan Jaya', 'Informatika', ', majoring in Informatics. With a strong passion for technology and its applications, I am dedicated to expanding my knowledge in the field of IT. I strive to stay updated with the latest trends and advancements, as I believe they play a crucial role in shaping the future. My goal is to utilize my skills to contribute positively to the tech industry and solve real-world problems through innovative solutions.');
 
 
 CREATE TABLE skill (
@@ -26,9 +26,9 @@ CREATE TABLE skill (
     deskripsi TEXT
 );
 INSERT INTO skill (judul, deskripsi) VALUES
-('Pemrograman Web', 'Menguasai HTML, CSS, dan JavaScript untuk membuat situs web interaktif.'),
-('Basis Data', 'Pengalaman dalam menggunakan MySQL dan MongoDB untuk mengelola data.'),
-('Desain Grafis', 'Kemampuan dalam menggunakan software desain seperti Adobe Photoshop dan Illustrator.');
+('Web Development', 'Membangun aplikasi web yang interaktif dan responsif menggunakan HTML, CSS, dan JavaScript, dengan fokus pada pengalaman pengguna yang optimal. Proses ini mencakup perancangan antarmuka yang menarik dan intuitif, pengembangan fitur interaktif, serta pengujian untuk memastikan kompatibilitas di berbagai perangkat dan browser. Selain itu, juga melibatkan penerapan prinsip desain yang baik, pengoptimalan performa, dan penggunaan framework modern untuk meningkatkan efisiensi dan kecepatan dalam pengembangan aplikasi.'),
+('Database Managementa', 'Mengelola dan merancang basis data menggunakan MySQL, termasuk perancangan skema yang efisien, pengoptimalan kueri untuk meningkatkan kinerja, serta memastikan integritas dan keamanan data. Selain itu, melakukan pemeliharaan rutin dan backup untuk menjaga ketersediaan data, serta menerapkan praktik terbaik dalam manajemen data untuk mendukung pengambilan keputusan yang berbasis data.'),
+('UI/UX Design', 'Mendesain antarmuka pengguna yang intuitif dan pengalaman pengguna yang menyenangkan untuk aplikasi dan situs web. Fokus pada pemahaman kebutuhan pengguna, menciptakan tata letak yang menarik, dan memastikan navigasi yang mudah agar interaksi pengguna menjadi lebih efisien dan memuaskan.');
 
 
 CREATE TABLE project (
@@ -39,9 +39,9 @@ CREATE TABLE project (
     link VARCHAR(255)
 );
 INSERT INTO project (title, deskripsi, gambar, link) VALUES
-('Proyek A', 'Deskripsi proyek A yang menarik dan informatif.', 'path/to/imageA.jpg', 'http://link-to-projectA.com'),
-('Proyek B', 'Deskripsi proyek B yang sangat berguna dan inovatif.', 'path/to/imageB.jpg', 'http://link-to-projectB.com'),
-('Proyek C', 'Deskripsi proyek C yang menunjukkan keterampilan saya.', 'path/to/imageC.jpg', 'http://link-to-projectC.com');
+('Pengabdian Masyarakat', 'Sekolah Dasar Negeri Jombang 01 di Tangerang Selatan menghadapi masalah kebersihan di perpustakaan. Buku-buku berantakan, lemari rusak, dan lantai kotor menghambat fungsi perpustakaan sebagai sumber belajar. Program "Gerakan Bersama, Menuju Perpustakaan Bersih SDN Jombang 01" bertujuan membersihkan perpustakaan dan mengajak warga sekolah untuk menjaga kebersihan perpustakaan.', 'picproject1.png', 'https://www.canva.com/design/DAGH_WVbwK8/piTK3k8K6Xkh-2LeCQGzzg/edit'),
+('Pengabdian Masyarakat 2', 'Proyek pengabdian masyarakat ini bertujuan untuk menangani kebutuhan mendesak dari masyarakat kurang mampu dengan menyediakan sumber daya dan dukungan yang esensial bagi mereka yang hidup di jalanan. Inisiatif ini berfokus pada pembagian makanan yang sering kali kesulitan memenuhi kebutuhan dasar mereka.', 'picproject2.png', 'https://www.youtube.com/watch?v=VdqNwVUFWFU'),
+('Kewirausahaan', 'Proyek kewirausahaan ini bertujuan untuk memperkenalkan dan memasarkan biji kopi berkualitas tinggi dari petani lokal kepada konsumen yang menghargai cita rasa kopi premium. Dengan meningkatkan kesadaran akan pentingnya kopi berkualitas, kami berkomitmen untuk mendukung para petani kopi lokal dan mengangkat taraf hidup mereka.', 'picproject3.jpeg', 'https://www.canva.com/design/DAF4KOKXFyw/uyL5wDcnWBb2SzHKcjPVcw/edit');
 
 
 CREATE TABLE contact (
