@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stiling.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <ul>
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Adam Herlambang</h1>
+            <h2>Informatics Student</h2>
+            <p>I create websites and applications that solve real-world problems.</p>
+            <a href="#projects" class="btn-custom">View My Work</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align: center; color: #64ffda;">My Projects</h2>
+        <div class="project-container">
+            <?php include 'projects.php'; ?>
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Adam Herlambang</p>
+    </footer>
+</body>
+</html>
