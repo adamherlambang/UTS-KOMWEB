@@ -1,4 +1,9 @@
 <?php
+// Mengaktifkan error reporting
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 include 'koneksi.php'; // Menghubungkan ke database
 
 // Mengambil data dari tabel personal_info
@@ -6,7 +11,13 @@ $sql_about = "SELECT nama, universitas, jurusan, deskripsi FROM about"; // Kolom
 $result_about = $conn->query($sql_about);
 
 // Memastikan data ditemukan
-$about = $result_about->fetch_assoc();
+if ($result_about === FALSE) {
+    die("Error in SQL query: " . $conn->error);
+} else if ($result_about->num_rows > 0) {
+    $about = $result_about->fetch_assoc();
+} else {
+    die("No data found");
+}
 ?>
 
 <!DOCTYPE html>
